@@ -19,4 +19,4 @@ python hpc_cvs.py
 # TITLESTR="PLOT_$DATE"
 # mail -a ./plots/output.pdf -s 'PLOT' daviddralle@gmail.com < /dev/null
 # TITLESTR="DATA_$DATE"
-mail -a ./monte_carlo_output/output.p -s 'DATA' daviddralle@gmail.com < /dev/null
+# mail -a ./monte_carlo_output/output.p -s 'DATA' daviddralle@gmail.com < /dev/null
