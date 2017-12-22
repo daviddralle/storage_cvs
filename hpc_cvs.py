@@ -51,13 +51,13 @@ def main():
     CVS = np.concatenate(CVS_list)
     pd.to_pickle([X, Y, CVS], './monte_carlo_output/output.p')
 
-    plt.contourf(X,Y,CVS)
-    plt.xlabel('Storm frequency [events per day]')
-    plt.ylabel('Storage capacity [mm]')
-    plt.title('Dry season storage sensitivity\nto climate and storage capacity')
-    cb = plt.colorbar()
-    cb.set_label('CV conditions @ dry season start ')
-    plt.savefig('./plots/output.pdf')
+    # plt.contourf(X,Y,CVS)
+    # plt.xlabel('Storm frequency [events per day]')
+    # plt.ylabel('Storage capacity [mm]')
+    # plt.title('Dry season storage sensitivity\nto climate and storage capacity')
+    # cb = plt.colorbar()
+    # cb.set_label('CV conditions @ dry season start ')
+    # plt.savefig('./plots/output.pdf')
 
 if __name__ == '__main__':
     main()
