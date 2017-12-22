@@ -15,7 +15,7 @@
 git checkout master
 source activate gr3_linux
 python hpc_cvs.py
-DATE=`date +%Y-%m-%d_%H%M`
+# DATE=`date +%Y-%m-%d_%H%M`
 # TITLESTR="PLOT_$DATE"
 # mail -a ./plots/output.pdf -s 'PLOT' daviddralle@gmail.com < /dev/null
 # TITLESTR="DATA_$DATE"
