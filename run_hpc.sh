@@ -17,6 +17,6 @@ source activate gr3_linux
 python hpc_cvs.py
 DATE=`date +%Y-%m-%d_%H%M`
 TITLESTR="PLOT_$DATE"
-mail -a ./plots/output.pdf -s $TITLESTR daviddralle@gmail.com < /dev/null
+mail -a ./plots/output.pdf -s 'PLOT' daviddralle@gmail.com < /dev/null
 TITLESTR="DATA_$DATE"
-mail -a ./monte_carlo_output/output.p -s $TITLESTR daviddralle@gmail.com < /dev/null
+mail -a ./monte_carlo_output/output.p -s 'DATA' daviddralle@gmail.com < /dev/null
