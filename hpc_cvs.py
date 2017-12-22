@@ -35,8 +35,8 @@ def main():
     dt = 0.1
     alpha = 60.0
     num_sims = 10
-    W0 = np.linspace(100, 1000, 10)
-    LAM = np.linspace(1/30., 4/30.0,10)
+    W0 = np.linspace(100, 1000, 20)
+    LAM = np.linspace(1/30., 4/30.0,20)
     X,Y = np.meshgrid(LAM, W0)
     Xs, Ys = np.array_split(X,cores), np.array_split(Y, cores)
     args = [(Xs[i], Ys[i], alpha, dt, tw, pet, num_sims, range(cores)[i]) for i in range(len(Xs))]

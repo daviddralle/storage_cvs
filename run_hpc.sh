@@ -15,16 +15,8 @@
 git checkout master
 source activate gr3_linux
 python hpc_cvs.py
-mail -a ./plots/output.pdf -s 'CVs plot' daviddralle@gmail.com < /dev/null
-mail -a ./monte_carlo_output/output.p -s 'CVs data' daviddralle@gmail.com < /dev/null
-
 DATE=`date +%Y-%m-%d_%H%M`
-TITLESTR="CVS_$DATE"
-TXT='.txt'
-SAVETXT=$TITLESTR$TXT
-x='Finished'
-echo $x > $SAVETXT
-sendmail daviddralle@gmail.com << EOF
-subject:$TITLESTR
-$x
-EOF
+TITLESTR="PLOT_$DATE"
+mail -a ./plots/output.pdf -s $TITLESTR daviddralle@gmail.com < /dev/null
+TITLESTR="DATA_$DATE"
+mail -a ./monte_carlo_output/output.p -s $TITLESTR daviddralle@gmail.com < /dev/null
