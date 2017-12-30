@@ -49,7 +49,7 @@ def main():
     pool.close()
     pool.terminate()
     CVS = np.concatenate(CVS_list)
-    pd.to_pickle([X, Y, CVS], './monte_carlo_output/output.p')
+    pd.to_pickle([X, Y, CVS], './data/output.p')
 
     # plt.contourf(X,Y,CVS)
     # plt.xlabel('Storm frequency [events per day]')
