@@ -30,7 +30,7 @@ def run_chunk(arguments):
 def main():
     cores = mp.cpu_count()
     sys.stdout.write('There are %s cores'%(cores) + '\r\n')
-    tw = 210.0 # wet season length in days
+    tw = 180.0 # wet season length in days
     pet = 2.0  # pet during wet season (mm/day)
     dt = 0.1
     alpha = 62.0
